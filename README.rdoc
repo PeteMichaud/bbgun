@@ -2,7 +2,8 @@
 
 {Homepage}[http://www.github.com/PeteMichaud/bbgun]
 
-Rails Gem for BBCode
+Rails Gem for BBCode. This gem is fundamentally limited because it uses regex to parse the code, which means it really
+screws the pooch on nexted tags. If you're already with not having nested tags, then this gem may be for you.
 
 == Install
 
