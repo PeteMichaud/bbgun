@@ -1,4 +1,4 @@
-module TrainBBCode
+module BBGun
 	Tags =  [[/\[b\](.*?)\[\/b\]/,'<strong>\1</strong>',:strong_enabled,"[b]BOLD[/b]","<strong>BOLD</strong>"],
 		[/\[i\](.*?)\[\/i\]/,'<i>\1</i>',:italic_enabled,"[i]italics[/i]","<i>italics</i>"],
 		[/\[u\](.*?)\[\/u\]/,'<u>\1</u>',:underline_enabled,"[u]underline[/u]","<u>underline</u>"],

@@ -1,1 +1,1 @@
-require 'trainbbcode'
+require 'bbgun'

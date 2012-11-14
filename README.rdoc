@@ -1,6 +1,6 @@
-= Train BBCode
+= BBGun
 
-{Homepage}[http://trainbbcode.arcath.net/]
+{Homepage}[http://www.github.com/PeteMichaud/bbgun]
 
 Rails Gem for BBCode
 
@@ -8,7 +8,7 @@ Rails Gem for BBCode
 
 Add:
 
-    gem "trainbbcode"
+    gem "bbgun"
 
 to your Gemfile and then install the gem using:
 
@@ -36,7 +36,7 @@ Whilst this method works its not the cleanest way of doing it. Its fine for simp
 
 This is done using config/initializers/tbbc.rb, this file needs to look like this:
 
-    Trainbbcode.configure do |c|
+    BBGun.configure do |c|
         c.strong_enabled = false
 	end
 

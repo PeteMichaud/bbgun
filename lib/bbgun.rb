@@ -1,20 +1,20 @@
-require 'trainbbcode/parse.rb'
-require 'trainbbcode/tags.rb'
-require 'trainbbcode/config.rb'
-require 'trainbbcode/string.rb'
-require 'trainbbcode/css.rb'
-require 'trainbbcode/swear_filter.rb'
-require 'trainbbcode/coderay'
+require 'bbgun/parse.rb'
+require 'bbgun/tags.rb'
+require 'bbgun/config.rb'
+require 'bbgun/string.rb'
+require 'bbgun/css.rb'
+require 'bbgun/swear_filter.rb'
+require 'bbgun/coderay'
 require 'rubygems'
 require 'coderay'
 
 #Helper Method
 if defined? Rails
-	require 'trainbbcode/application_helper.rb'
+	require 'bbgun/application_helper.rb'
 	ActionView::Base.send :include, TBBCHelper
 end
 
-module TrainBBCode
+module BBGun
     def self.configure
         @config = Config.new
         yield(@config) 

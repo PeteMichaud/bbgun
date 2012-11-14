@@ -1,4 +1,4 @@
-module TrainBBCode
+module BBGun
 	# Parses the input and returns it in tbbc form.
 	#
 	#   TBBC.new.parse("[b]Bold[/b]")
@@ -27,7 +27,7 @@ module TrainBBCode
 		#end
 		#Loading Default Tags and applying them
 		if @config.allow_defaults then
-			TrainBBCode::Tags.each do |tag|
+      BBGun::Tags.each do |tag|
 				input=runtag(input,tag)
 			end	
 		end

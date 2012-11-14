@@ -1,11 +1,11 @@
-require 'lib/trainbbcode.rb'
+require 'lib/bbgun.rb'
 
 def upcaser(input)
 	input.upcase
 end
 
-describe TrainBBCode, "#parse" do
-	TrainBBCode::Tags.each do |tag|
+describe BBGun, "#parse" do
+	BBGun::Tags.each do |tag|
 	   it "Should return #{tag[4]} for #{tag[3]}" do
 	       tag[3].tbbc.should == tag[4]
        end

@@ -1,17 +1,18 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "trainbbcode/version"
+require "bbgun/version"
 
 Gem::Specification.new do |s|
-	s.name = "trainbbcode"
-	s.version = TrainBBCode::VERSION
+	s.name = "bbgun"
+	s.version = BBGun::VERSION
 	s.platform = Gem::Platform::RUBY
-	s.authors = ["Adam \"Arcath\" Laycock"]
-	s.email = ["gems@arcath.net"]
-	s.homepage = "http://trainbbcode.arcath.net"
+	s.authors = ["Pete Michaud"]
+	s.email = ["michaudp@gmail.com"]
+	s.homepage = "http://www.github.com/PeteMichaud/bbgun"
 	s.summary = "Provides BBCode for Ruby."
-	
-	s.add_development_dependency "rspec"
+  s.summary = "Provides BBCode for Ruby."
+
+  s.add_development_dependency "rspec"
 	s.add_dependency "coderay"
 	
 	s.files         = `git ls-files`.split("\n")

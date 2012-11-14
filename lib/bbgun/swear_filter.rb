@@ -1,8 +1,8 @@
-module TrainBBCode
+module BBGun
     module SwearFilter
 	    SwearChracters = %w[! $ % ^ * ~]
 	    def self.parse(input)
-		    TrainBBCode.config.swear_words.each do |swear|
+		    BBGun.config.swear_words.each do |swear|
 			    input=input.gsub(/#{swear}/,swear_string(swear))
 		    end
 		    input
