@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    bbgun (1.0.0)
+    bbgun (1.1.0)
       coderay
 
 GEM
