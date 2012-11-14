@@ -11,7 +11,7 @@ module BBGun
 		[/\[ol\](.*?)\[\/ol\]/,'<ol>\1</ol>',:list_enabled,"[ol]list[/ol]","<ol>list</ol>"],
 		[/\[li\](.*?)\[\/li\]/,'<li>\1</li>',:list_enabled,"[li]list[/li]","<li>list</li>"],
 		[/\[quote\](.*?)\[\/quote\]/,'<blockquote>\1</blockquote>',:quote_enabled,"[quote]quote[/quote]","<blockquote>quote</blockquote>"],
-		[/\[quote=(.*?)\](.*?)\[\/quote\]/,'<blockquote><i>Posted by <b>\1</b></i><br />\2</blockquote>',:quote_enabled,"[quote=user]quote[/quote]","<blockquote><i>Posted by <b>user</b></i><br />quote</blockquote>"],
+		[/\[quote=(.*?)\](.*?)\[\/quote\]/,'<blockquote><em>Posted by <strong>\1</strong></em><br />\2</blockquote>',:quote_enabled,"[quote=user]quote[/quote]","<blockquote><i>Posted by <b>user</b></i><br />quote</blockquote>"],
 		[/\[color=(.*?)\](.*?)\[\/color\]/,'<span style="color:\1;">\2</span>',:color_enabled,"[color=red]red text[/color]","<span style=\"color:red;\">red text</span>"],
 		[/\[center\](.*?)\[\/center\]/,'<div style="text-align:center">\1</div>',:alignment_enabled,"[center]centered text[/center]","<div style=\"text-align:center\">centered text</div>"],
 		[/\[left\](.*?)\[\/left\]/,'<div style="text-align:left">\1</div>',:alignment_enabled,"[left]left text[/left]","<div style=\"text-align:left\">left text</div>"],
