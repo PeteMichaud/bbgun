@@ -8,12 +8,6 @@ require 'bbgun/coderay'
 require 'rubygems'
 require 'coderay'
 
-#Helper Method
-if defined? Rails
-	require 'bbgun/application_helper.rb'
-	ActionView::Base.send :include, TBBCHelper
-end
-
 module BBGun
     def self.configure
         @config = Config.new
